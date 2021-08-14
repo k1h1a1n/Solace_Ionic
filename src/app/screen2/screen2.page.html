@@ -1,0 +1,65 @@
+<ion-content>
+  <div>
+    <ion-button (click) = "back()" class="backButton"><label class="backFont"> Back</label></ion-button>
+  </div>
+  <div>
+    <img class="OvalGreen" src="assets/img/Mediumgreen.png">
+  </div>
+  <div>
+    <img class="darkGreen" src="assets/img/darkGreen.png">
+    <img class="darkPink" src="assets/img/darkPink.png">
+    <img class="VsmallPink" src="assets/img/VsmallPink.png">
+  </div>
+  <ion-card class="card">
+    <b class="Label1">Music acts like a magic key, to</b>
+    <b class="Label2">which the most tightly closed</b>
+    <b class="Label3">heart opens!</b>
+    <b class="Label4">It frees your heart from the</b>
+    <b class="Label5">dungeon of your mind.</b>
+    <b class="Label6">How are you feeling?</b>
+    <!-- <ion-button (click) = "playTrack()">test</ion-button>
+    <audio controls>
+      <source  type="audio/mp3"  src="http://localhost:3000/tracks/60953f598e2b333378d38a6c" >
+    </audio> -->
+  <div>
+    <ion-button (click) = "angry()" [fill] = "Angry == true ? 'outline' : 'clear' " class="angryBtn">
+      <div>
+        <b class="AngryFont">Angry </b>
+      </div>
+      <div>
+        <img src="assets/img/Angry.png" class="angryImg">
+      </div>
+    </ion-button>
+    <ion-button (click) = "sad()" [fill] = "Sad == true ? 'outline' : 'clear' " class="sadBtn">
+      <div>
+        <b class="SadFont">Sad</b>
+      </div>
+      <div>
+        <img src="assets/img/Sad.png" class="angryImg">
+      </div>
+    </ion-button>
+  </div>
+  <div style="margin-top: -7px;margin-left: 7%;">
+    <ion-button (click) = "happy()" [fill] = "Happy == true ? 'outline' : 'clear' " class="happyBtn">
+      <div>
+        <b class="happyFont">Happy</b>
+      </div>
+      <div>
+        <img src="assets/img/Happy.png" class="angryImg">
+      </div>
+    </ion-button>
+    <ion-button (click) = "excited()" [fill] = "Excited == true ? 'outline' : 'clear' " class="excitedBtn">
+      <div>
+        <b class="excitedFont">Excited</b>
+      </div>
+      <div>
+        <img src="assets/img/Excited.png" class="excitedImg">
+      </div>
+    </ion-button>
+  </div>
+  <div *ngIf="diveIn" style="margin-left: 10%;">
+    <ion-button (click)="dive()" class="divebtn"><b class="diveFont">Dive In</b></ion-button>
+  </div>
+  <ion-row *ngIf = "space" class="emptyspace"></ion-row>
+  </ion-card>
+</ion-content>

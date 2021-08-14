@@ -1,0 +1,173 @@
+<ion-content style="color: #f3fadb;">
+  <div>
+    <ion-button (click) = "back()" class="backButton">
+      <label class="backFont"> Back</label>
+    </ion-button>
+  </div>
+   <div>
+    <img class="OvalGreen" src="assets/img/Mediumgreen.png">
+  </div>
+  <div>
+    <img class="UglyBlue" src="assets/img/UglyBlue.png">
+  </div>
+  <div>
+    <img class="Circle" src="assets/img/Grouped .png">
+  </div>
+  <div class="VsmallPink">
+    <img src="assets/img/VsmallPink.png">
+  </div>
+  <ion-card  class="card" style="margin-top: 15%;">
+    <div *ngIf="form1">
+      <div>
+        <b class="h2Label">How is your day so far?Was it</b>
+        <b class="b1Label">productive?</b>
+      </div>
+        <div class="divpadding">
+          <div>
+            <ion-button color = {{yesBtn}} (click) = "userInfo('yes')" class="btn">
+              <b [ngStyle]="{'color': labelColor1 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">Yes</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{noBtn}} (click) = "userInfo('no')" class="btn">
+              <b [ngStyle]="{'color': labelColor2 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">No</b>
+            </ion-button>
+            <ion-row *ngIf = "space" class="emptyspace"></ion-row>
+          </div>  
+        </div>
+      <div *ngIf="No">
+        <b class="h2Label">Its okay! We all have those days.</b>
+        <b class="b1Label">Think positive & be positive!</b>
+        <div class="divpadding">
+          <ion-button (click) = "continue1()" class="continuebtn">
+            <b class="continueFont">Continue</b>
+          </ion-button>
+        </div>
+      </div>
+      <div *ngIf="Yes">
+        <b class="yesLabel">Nice, but you can do more.</b>
+        <div class="divpadding">
+          <div>
+            <ion-button color = {{yesBtn1}} (click) = "userInfo1('yes')" class="btn">
+              <b [ngStyle]="{'color': labelColor3 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">Yes</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{noBtn1}} (click) = "userInfo1('no')" class="btn">
+              <b [ngStyle]="{'color': labelColor4 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">No</b>
+            </ion-button>
+          </div>  
+        </div>
+      </div>
+      <div *ngIf="Yes1">
+        <b class="yes1Label">Nice, that's what I wanted to hear.</b>
+        <div class="divpadding">
+          <ion-button (click) = "continue2()" class="continuebtn">
+            <b class="continueFont">Continue</b>
+          </ion-button>
+        </div>
+      </div>
+      <div *ngIf="No1">
+        <b class="no1Label">It's ok to take breaks.</b>
+        <div class="divpadding">
+          <ion-button (click) = "continue3()" class="continuebtn">
+            <b class="continueFont">Continue</b>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+      <div *ngIf="form2">
+        <div>
+          <b class="f2Label">Did you engage in all the activities</b>
+          <b class="F2Label">cheerfully?</b>
+        </div>
+          <div class="divpadding1">
+            <div>
+              <ion-button color = {{yesBtn2}} (click) = "userInfo2('yes')" class="btn">
+                <b [ngStyle]="{'color': labelColor5 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">Yes</b>
+              </ion-button>
+            </div>
+            <div>
+              <ion-button color = {{noBtn2}} (click) = "userInfo2('no')" class="btn">
+                <b [ngStyle]="{'color': labelColor6 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">No</b>
+              </ion-button>
+              <ion-row *ngIf = "space1" class="emptyspace2"></ion-row>
+            </div>  
+            <div *ngIf="No2">
+                <ion-button (click) = "continue5()" class="continuebtnf2">
+                  <b class="continueFont">Continue</b>
+                </ion-button>
+            </div>
+            <div *ngIf="Yes2">
+              <ion-button (click) = "continue4()" class="continuebtnf2">
+                <b class="continueFont">Continue</b>
+              </ion-button>
+          </div>
+          </div>
+      </div>
+      <div *ngIf="form3">
+        <div>
+          <b class="f2Label">Have you been interested in taking</b>
+          <b class="F2Label">new hobbies?</b>
+        </div>
+        <div class="divpadding4">
+          <div>
+            <ion-button color = {{yesBtn3}} (click) = "userInfo3('yes')" class="btn">
+              <b [ngStyle]="{'color': labelColor7 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">Yes</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{noBtn3}} (click) = "userInfo3('no')" class="btn">
+              <b [ngStyle]="{'color': labelColor8 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">No</b>
+            </ion-button>
+            <ion-row *ngIf = "space2" class="emptyspace3"></ion-row>
+          </div>  
+          <div *ngIf="No3">
+            <b class="f3Label2">Getting hobbies will help you calm</b>
+            <div>
+              <b class="f3Label3">down.</b>
+            </div>
+              <ion-button (click) = "continue7()" class="continuebtn2">
+                <b class="continueFont">Continue</b>
+              </ion-button>
+          </div>
+          <div *ngIf="Yes3">
+            <b class="f3Label1">It's good to have a hobby.</b>
+            <ion-button (click) = "continue6()" class="continuebtn3">
+              <b class="continueFont">Continue</b>
+            </ion-button>
+        </div>
+        </div>
+      </div>
+      <div *ngIf="form4">
+        <div>
+          <b class="f4Label">Do you often suppress your emotions?</b>
+        </div>
+        <div class="divpadding4">
+          <div>
+            <ion-button color = {{yesBtn4}} (click) = "userInfo4('yes')" class="btn">
+              <b [ngStyle]="{'color': labelColor9 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">Yes</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{noBtn4}} (click) = "userInfo4('no')" class="btn">
+              <b [ngStyle]="{'color': labelColor10 == true ? 'white' : 'rgb(51, 51, 51)'}" class="yes">No</b>
+            </ion-button>
+            <ion-row *ngIf = "space4" class="space4"></ion-row>
+          </div> 
+          <div *ngIf="No4">
+              <b class="f4Label2">That's good.</b>
+              <ion-button (click) = "continue9()" class="continuebtn4">
+                <b class="continueFont">Continue</b>
+              </ion-button>
+          </div>
+          <div *ngIf="Yes4">
+            <b class="f4Label1">Suppressing emotions causes stress.</b>
+            <ion-button (click) = "continue8()" class="continuebtn4">
+              <b class="continueFont">Continue</b>
+            </ion-button>
+        </div>
+        </div>
+      </div>
+  </ion-card>
+</ion-content>

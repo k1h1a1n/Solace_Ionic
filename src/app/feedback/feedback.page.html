@@ -1,0 +1,53 @@
+
+<ion-content class="background">
+    <div>
+      <ion-button (click) = "back()" class="backButton"><label class="backFont"> Back</label></ion-button>
+    </div>
+    <div *ngIf = 'form1'>
+      <ion-card class="card">
+        <div class="div">
+          <b class="h2Label">How are you feeling now?</b>
+          <div>
+            <ion-button color = {{Btn1}} (click) = "userInfo1()" class="btn">
+              <b [ngStyle]="{'color': labelColor1 == true ? 'white' : '#929292'}" class="yes">Peaceful</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{Btn2}} (click) = "userInfo2()" class="btn">
+              <b [ngStyle]="{'color': labelColor2 == true ? 'white' : '#929292'}" class="yes">Happy</b>
+            </ion-button>
+          </div>   
+          <div>
+            <ion-button color = {{Btn3}} (click) = "userInfo3()" class="btn">
+              <b [ngStyle]="{'color': labelColor3 == true ? 'white' : '#929292'}" class="yes">Still the same</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{Btn4}} (click) = "userInfo4()" class="btn">
+              <b [ngStyle]="{'color': labelColor4 == true ? 'white' : '#929292'}" class="yes">Not sure</b>
+            </ion-button>
+          </div>
+        </div>
+      </ion-card>
+      <div *ngIf = 'continue'>
+        <ion-button (click) = 'Continue()' class="continuebtn"><b class="confont">Continue</b></ion-button>
+      </div>
+    </div>
+    <div *ngIf = 'form2'>
+      <ion-card class="card2">
+        <div style="margin-top: 17px;">
+          <div>
+            <ion-button color = {{Btn5}} (click) = "userInfo5()" class="btn">
+              <b [ngStyle]="{'color': labelColor5 == true ? 'white' : '#929292'}" class="yes">Play another Song</b>
+            </ion-button>
+          </div>
+          <div>
+            <ion-button color = {{Btn6}} (click) = "userInfo6()" class="btn">
+              <b [ngStyle]="{'color': labelColor6 == true ? 'white' : '#929292'}" class="yes">Exit</b>
+            </ion-button>
+          </div>
+        </div>
+      </ion-card>
+      
+    </div>
+</ion-content>

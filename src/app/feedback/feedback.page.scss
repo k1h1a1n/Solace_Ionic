@@ -1,0 +1,78 @@
+
+ion-content.background{
+    --background: url('/../../assets/img/Bg 3.png') no-repeat center top ; 
+}
+
+.backFont{
+    font-family: 'Sniglet';
+    text-transform: none;
+    font-weight: 100;
+    margin-left: 18px;
+    font-size: 17px;
+  }
+.backButton{
+  height:30px;
+  --border-radius:15px;
+  --background:#b5d255;
+  margin-top: 10%;
+  width: 23%;
+  margin-left: -15px;
+}
+.card{
+    height: 300px;
+    border-radius: 30px 30px 30px 30px;
+    width: 310px;
+    margin-left: 25px;
+    margin-top: 90px;
+}
+.div{
+    margin-top: 15px;
+}
+.h2Label{
+  font-family: 'Sniglet';
+  font-size: 20px;
+  color: #707070;
+  font-weight: 550;
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 16%;
+  margin-bottom: 2%;
+ }
+ .btn{
+  --border-radius:20px;
+  --box-shadow: 0px 1px 8px #dddddd;
+  width: 78%;
+  height: 38px;
+  --background:#FFFF;
+  margin-left: 11%;
+  margin-top: 12px;
+}
+.yes{
+  font-family: 'Sniglet';
+  text-transform: none;
+  font-weight: 500;
+  font-size: 19px; 
+  margin-top: 3px;
+
+}
+.continuebtn{
+  --border-radius:20px;
+  --background:#91be00;
+  width: 73%;
+  height: 40px;
+  margin-top:85px ;
+  margin-left: 44px;
+}
+.confont{
+  font-family: 'Sniglet';
+  font-size: 21px;
+  font-weight: 550;
+  text-transform: none;
+}
+.card2{
+  height: 150px;
+    border-radius: 30px 30px 30px 30px;
+    width: 310px;
+    margin-left: 25px;
+    margin-top: 140px;
+}

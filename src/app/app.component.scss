@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Sniglet';
+    src: url('../assets/fonts/Sniglet/Sniglet-Regular.ttf') format('ttf') ;
+
+  }
+  
+  * {
+    font-family: 'Sniglet';
+  }
+  @import '../theme/fonts';

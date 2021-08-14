@@ -1,0 +1,43 @@
+.img{
+    height: 60%;
+    width: 110%;  
+}
+ion-content.background{
+    --background: url('/../../assets/img/Play M.png') no-repeat center top ; 
+}
+
+.backFont{
+    font-family: 'Sniglet';
+    text-transform: none;
+    font-weight: 100;
+    margin-left: 18px;
+    font-size: 17px;
+  }
+.backButton{
+  height:30px;
+  --border-radius:15px;
+  --background:#b5d255;
+  margin-top: 10%;
+  width: 23%;
+  margin-left: -15px;
+}
+
+.audio{
+    margin-top: 40px;
+    margin-left: 9%;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    display: grid;
+}  
+
+.name{
+    font-family: 'Sniglet';
+    text-transform: none;
+    font-weight: 100;
+    font-size: 20px;
+    display: grid;
+    margin-top: 102%;
+    text-align: center;
+    font-weight: bold;
+    color: #434343;
+}
+

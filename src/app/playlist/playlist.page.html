@@ -1,0 +1,52 @@
+<ion-content >
+  <div>
+    <ion-button (click) = "back()" class="backButton"><label class="backFont"> Back</label></ion-button>
+  </div>
+  <div>
+    <img class="OvalGreen" src="assets/img/Mediumgreen.png">
+  </div>
+  <div>
+    <img class="darkGreen" src="assets/img/darkGreen.png">
+    <img class="darkPink" src="assets/img/darkPink.png">
+    <img class="VsmallPink" src="assets/img/VsmallPink.png">
+  </div>
+  <ion-card class="card">
+    <div style="margin-top: 7%;">
+      <b class="heading">PlayList</b>
+    </div>
+    <div class="line"></div>
+    <div>
+      <ion-list *ngFor="let item of x">
+        <ion-grid>
+          <ion-row>
+            <ion-col size = '1.1'>
+              <ion-label class="number">{{item.number}}</ion-label>
+            </ion-col>
+            <ion-col (click) = 'test(item.id,item.name)' size = '3'>
+              <img class="logoimage" src="assets/img/music-logo-design.jpg" >
+            </ion-col>
+            <ion-col (click) = 'test(item.id,item.name)'>
+              <ion-row>
+                <ion-label class="name">{{item.name}}</ion-label>
+              </ion-row>
+              <!-- <ion-row>
+                <ion-label class="artist">{{item.artist}}</ion-label>
+              </ion-row> -->
+              <ion-row>
+                <ion-label class="artist">Duration : {{item.duration}}</ion-label>
+              </ion-row>
+            </ion-col>
+            <ion-col size = '1.1'>
+              <ion-icon style="font-size: 22px;" name="heart-outline"></ion-icon>
+            </ion-col>
+            <ion-col size = '1.1'>
+              <ion-icon style="font-size: 18px;margin-top: 1px;" name="ellipsis-vertical-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <div class="line"></div>
+        </ion-grid>
+      </ion-list>
+    </div>
+  </ion-card>
+  
+</ion-content>
